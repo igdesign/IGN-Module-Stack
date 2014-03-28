@@ -1,0 +1,46 @@
+.stack {
+  width: 100%;
+
+  .stack__radio-control {
+    box-sizing: border-box;
+    display: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .stack__item {
+    background-color: #fff;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+  }
+
+  .stack__figure {
+    margin: 0;
+  }
+
+  .stack__img {
+    width: 100%;
+  }
+
+  .stack__caption {
+    display: block;
+  }
+
+  .stack__title {
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(221,221,221);
+    margin: 10px 0;
+  }
+
+  .stack__link {
+    background-color: transparent;
+    display: block;
+    text-align: right;
+  }
+
+  .stack__nav {
+    display: none;
+  }
+}
