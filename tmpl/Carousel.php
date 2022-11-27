@@ -4,8 +4,6 @@ defined( '_JEXEC' ) or die( 'Restricted access');
 $document = JFactory::getDocument();
 
 if ($params->get('use_js', true)) {
-  $document->addScript('modules/mod_stack/media/js/devUtility.js');
-/*   $document->addScript(JURI::base() . 'media/mod_stack/js/picturefill.js'); */
   $document->addScript('modules/mod_stack/media/js/responsiveSlider.js');
 }
 
@@ -105,9 +103,6 @@ $document->addStyleDeclaration( $style_actions );
 
     <h3 class="section-header"><?php echo $module->title; ?> Navigation</h3>
     <ul>
-
-
-
     <li class="<?php echo trim($moduleclass_sfx); ?>__nav-previous">
       <button id="<?php echo trim($moduleclass_sfx); ?>__nav-previous"  class="<?php echo trim($moduleclass_sfx); ?>__nav-previous    js-<?php echo trim($moduleclass_sfx); ?>-button-previous"><span>Previous Slide</span></button></li>
     <?php foreach($list as $index=>$item) : ?>
