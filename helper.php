@@ -11,12 +11,11 @@
  * is derivative of works licensed under the GNU General Public License or
  * other free or open source software licenses.
  */
-
-require_once JPATH_SITE . '/components/com_content/helpers/route.php';
+JLoader::register('JNamespacePsr4Map', JPATH_LIBRARIES . '/namespacemap.php');
+(new JNamespacePsr4Map)->load();
 
 class modStackHelper
 {
-
 	/**
 	 * Retrieves a list of content items to display
 	 *
@@ -26,8 +25,6 @@ class modStackHelper
 	 */
 	public static function getList(&$params)
 	{
-
-
 		$db     = JFactory::getDbo();
 		$user   = JFactory::getUser();
 		$groups = implode(',', $user->getAuthorisedViewLevels());
